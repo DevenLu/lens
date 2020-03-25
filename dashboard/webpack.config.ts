@@ -9,7 +9,7 @@ export default () => {
   const { IS_PRODUCTION } = config;
   const srcDir = path.resolve(process.cwd(), CLIENT_DIR);
   const buildDir = path.resolve(process.cwd(), BUILD_DIR, CLIENT_DIR);
-  const sassCommonVarsFile = path.resolve(srcDir, "components/vars.scss");
+  const sassCommonVarsFile = "./components/vars.scss";
   const tsConfigClientFile = path.resolve(srcDir, "tsconfig.json");
 
   return {
